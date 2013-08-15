@@ -9,7 +9,6 @@ app.get '/', (request, response) ->
 port = process.env.PORT or 5000
 
 readStaticPage = (file) ->
-  file = 'static_pages/' + file
   fs.readFileSync(file, 'utf8')
 
 app.listen port, ->

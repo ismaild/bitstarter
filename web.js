@@ -15,7 +15,6 @@
   port = process.env.PORT || 5000;
 
   readStaticPage = function(file) {
-    file = 'static_pages/' + file;
     return fs.readFileSync(file, 'utf8');
   };
 
